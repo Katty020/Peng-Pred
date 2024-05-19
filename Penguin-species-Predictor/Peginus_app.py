@@ -44,7 +44,7 @@ penguins_raw = pd.read_csv(r'/home/quannt/Quan/penguins_cleaned.csv')
 penguins = penguins_raw.drop(columns=['species'])
 df = pd.concat([input_df,penguins],axis=0)
 
-# Encoding of ordinal features
+
 # https://www.kaggle.com/pratik1120/penguin-dataset-eda-classification-and-clustering
 encode = ['sex','island']
 for col in encode:
